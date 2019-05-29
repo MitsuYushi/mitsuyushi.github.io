@@ -8,6 +8,7 @@ body,html {
 .slideshow {
     position: relative;
     text-align: center;
+    margin-top: 56px;
 }
 
 .slideshow .text-center {
@@ -40,7 +41,7 @@ body,html {
 }
 
 .card img {
-    height: 400wpx;
+    height: 400px;
     transition: all 1s;
 }
 
