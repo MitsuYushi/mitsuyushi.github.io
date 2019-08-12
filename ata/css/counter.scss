@@ -1,0 +1,33 @@
+.polaris-nav {
+    .polaris-count-container {
+        position: absolute;
+        top: -15px;
+        right: 0px;
+        width: 28px;
+        text-align: center;
+    }
+
+    .polaris-count {
+        display: inline-block;
+        height: 16px;
+        min-width: 16px;
+        border-radius: 8px;
+        padding: 0 5px;
+        background-color: $red;
+        font-size: 12px;
+        font-weight: bold;
+        color: $white;
+        line-height: 16px;
+    }
+
+    .polaris-menu-mobile .polaris-count-container {
+        position: static;
+        display: inline-block;
+        width: 0;
+    }
+
+    .polaris-menu-mobile .polaris-count {
+        vertical-align: top;
+        margin: 8px 0 8px 10px;
+    }
+}

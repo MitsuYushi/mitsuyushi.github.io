@@ -1,0 +1,34 @@
+.polaris-nav {
+    .polaris-dropdown-more {
+        @include border-radius-small;
+        z-index: 99;
+        width: 350px;
+        padding: 20px;
+        @include translucent-black-background($high-opacity);
+        text-align: center;
+        max-height: 500px;
+    }
+
+    .polaris-more-item {
+        display: inline-block;
+        list-style: none;
+        margin: 0;
+    }
+
+    .polaris-more-item .polaris-link {
+        display: block;
+        height: 103px;
+        width: 103px;
+        padding: 32px 0;
+        text-align: center;
+        font-size: 14px;
+        line-height: 1;
+    }
+
+    .polaris-more-item .polaris-icon {
+        display: block;
+        height: 20px;
+        margin: 10px auto;
+        float: none;
+    }
+}

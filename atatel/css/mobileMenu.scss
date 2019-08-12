@@ -1,0 +1,230 @@
+.polaris-nav {
+
+	.polaris-menu-mobile {
+		background-color:$black;
+		overflow: hidden;
+		z-index: 100;
+		top: 0;
+		left: 0;
+		width: 100vw;
+		max-width: 100vw;
+		padding-left: 80px;
+		padding: 0;
+		height: 1px;
+		max-height: 100vh;
+	}
+
+	.polaris-is-open .polaris-menu-mobile {
+		height: 100%;
+	}
+
+	.polaris-menu-mobile-sub {
+		font-size: 0.75rem;
+	}
+
+	.polaris-menu-mobile .polaris-item {
+		float: none;
+		display: block;
+	}
+
+	.polaris-menu-mobile .polaris-icon {
+		height: 35px;
+		margin-right: 10px;
+	}
+
+	.polaris-menu-mobile .polaris-link {
+		float: none;
+		display: inline-block;
+		height: auto;
+		min-height: 35px;
+		width: 100%;
+		margin: 4px auto;
+		padding: 0 0 0 30px;
+		line-height: 32px;
+		text-align: left;
+		font-size: 1rem;
+	}
+
+	.polaris-menu-mobile .polaris-link.polaris-is-active {
+		color: $white;
+		border-left: 3px solid $blue;
+		border-bottom: 0 solid $blue;
+		padding-left: 27px;
+	}
+
+	.polaris-mobile .polaris-item:first-child .polaris-link {
+		z-index: 101;
+	}
+
+	.polaris-link.polaris-submenu-back {
+		display: none;
+		position: absolute;
+		top: 0;
+		right: 0;
+		height: 50px;
+		width: auto;
+		padding-right: 30px;
+		margin: 0;
+		line-height: 50px;
+	}
+
+	.polaris-submenu {
+		top: 0;
+	}
+
+	.polaris-has-submenu-open {
+		overflow: visible;
+	}
+
+	.polaris-has-submenu-open .polaris-link.polaris-submenu-back {
+		display: block;
+	}
+
+	.polaris-menu-mobile .polaris-dropdown-btn:before,
+	.polaris-menu-mobile .polaris-dropdown-btn:after {
+	    position:absolute;
+	    content:'';
+	    top: 14px;
+	    width: 1px;
+	    height: 8px;
+	    background-color: $silver-chalice;
+	    -webkit-transition: all .3s ease-in-out 0s;
+		-moz-transition: all .3s ease-in-out 0s;
+		-o-transition: all .3s ease-in-out 0s;
+		-ms-transition: all .3s ease-in-out 0s;
+		transition: all .3s ease-in-out 0s;
+	}
+
+	.polaris-menu-mobile .polaris-dropdown-btn:before {
+	    right:36px;
+	    -webkit-transform: rotate(130deg);
+	    -moz-transform: rotate(130deg);
+	    transform: rotate(130deg);
+	}
+
+	.polaris-menu-mobile .polaris-dropdown-btn:after {
+	    right:30px;
+	    -webkit-transform: rotate(50deg);
+	    -moz-transform: rotate(50deg);
+	    transform: rotate(50deg);
+	}
+
+	.polaris-mobile .polarisSub-cart {
+		float:right;
+	}
+
+	.polaris-is-open + .xfinity-logo,
+	.polaris-is-open + .xfinity-logo + .polarisSub-cart {
+		display:none;
+	}
+
+	.polaris-menu-mobile .mobile-comcast-business {
+		border-top: 1px solid $scorpion;
+		margin-top: 20px;
+    	padding-top: 20px;
+	}
+
+	// search mobile
+
+	&._mobileNavOpen {
+		.polaris-mobile {
+			.polarisSub-search,
+			.polarisSub-cart {
+				display: none;
+			}
+		}
+	}
+
+	.polaris-mobile {
+		.polarisSub-search {
+			position: static;
+			float:right;
+			height: 50px;
+
+			label {
+				@include polaris-vh();
+			}
+
+			.polarisSub-search-btn {
+				position: relative;
+				height: 50px;
+				width: 50px;
+				border: 0;
+		    background: none;
+				background-position: center center;
+				background-repeat: no-repeat;
+		    background-image: url("data:image/svg+xml,%3Csvg fill='white' version='1.1' id='Capa_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='612.08px' height='612.08px' viewBox='0 0 612.08 612.08' style='enable-background:new 0 0 612.08 612.08;' xml:space='preserve'%3E%3Cg%3E%3Cpath d='M237.927,0C106.555,0,0.035,106.52,0.035,237.893c0,131.373,106.52,237.893,237.893,237.893 c50.518,0,97.368-15.757,135.879-42.597l0.028-0.028l176.432,176.433c3.274,3.274,8.48,3.358,11.839,0l47.551-47.551 c3.274-3.274,3.106-8.703-0.028-11.838L433.223,373.8c26.84-38.539,42.597-85.39,42.597-135.907C475.82,106.52,369.3,0,237.927,0z M237.927,419.811c-100.475,0-181.918-81.443-181.918-181.918S137.453,55.975,237.927,55.975s181.918,81.443,181.918,181.918 S338.402,419.811,237.927,419.811z'/%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3C/svg%3E%0A");
+				background-size:20px;
+				cursor: pointer;
+			}
+
+			.polarisSub-search-btn-close {
+				display: none;
+				position: absolute;
+				top: 50px;
+				height: 50px;
+				width: 50px;
+				border: 0;
+				opacity: .6;
+		    background: none;
+				background-position: center center;
+				background-repeat: no-repeat;
+				background-image: url("data:image/svg+xml,%3Csvg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 1000 1000' enable-background='new 0 0 1000 1000' xml:space='preserve'%3E%3Cmetadata%3E Svg Vector Icons : http://www.onlinewebfonts.com/icon %3C/metadata%3E%3Cg%3E%3Cpath d='M569.3,498.4L975.5,94.2c19.2-19.1,19.3-50.1,0.2-69.3c-19.2-19.3-50.1-19.3-69.3-0.2L500,428.9L97.2,24.8C78.1,5.7,47.1,5.6,27.9,24.7C8.7,43.8,8.7,74.9,27.8,94.1l402.7,404L24.5,902c-19.2,19.1-19.3,50.1-0.2,69.3c9.6,9.6,22.1,14.5,34.7,14.5c12.5,0,25-4.7,34.6-14.3l406.2-404l406.5,407.7c9.6,9.6,22.1,14.4,34.7,14.4c12.5,0,25-4.8,34.6-14.3c19.2-19.1,19.2-50.1,0.1-69.3L569.3,498.4L569.3,498.4z'/%3E%3C/g%3E%3C/svg%3E");
+				background-size:20px;
+				z-index: 1;
+				cursor: pointer;
+
+				&:hover {
+		      opacity: 1;
+		    }
+			}
+
+			.x-field__input {
+				display: none;
+				position: absolute;
+				top: 100%;
+				right: 0;
+				width: 100vw;
+				background-color: white;
+				color: black;
+			}
+
+			&._showInput {
+				.x-field__input,
+				label,
+				.polarisSub-search-btn-close {
+					display: block;
+				}
+			}
+		}
+
+		.x-suggestions__list {
+	    top: calc(100% + 50px);
+	    width: 100vw;
+		}
+
+		.polarisSub-cart {
+			float:right;
+		}
+	}
+}
+
+
+
+/*********************************************
+MQ
+**********************************************/
+
+@media all and (max-width: 640px) {
+
+  	.polaris-nav .polaris-dropdown--bg {
+		position: fixed;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background-color: rgba(0,0,0,.85);
+		z-index: 0;
+	}
+
+}

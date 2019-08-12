@@ -1,0 +1,97 @@
+//Primary Colors
+$white          : #fff    !default;
+$red            : #C90318 !default; //Red Cherry
+$blue           : #2B9CD8 !default; //Blue Sky
+$green          : #19A926 !default; //Green Grass
+$yellow         : #ffa700 !default; //Yellow Pumpkin
+$black          : #000    !default;
+
+//Secondary Colors
+$red-watermelon : #fb543f !default;
+$blue-ocean     : #1a6992 !default;
+$green-lime     : #5bc942 !default;
+$yellow-banana  : #FEC800 !default;
+$midnight       : #101d24 !default;
+
+//Gray Scale
+$grey8: #646a70 !default;
+$cod-gray		    : #191919;
+$mine-shaft 	  : #303030;
+$tundora		    : #474747;
+$scorpion		    : #5e5e5e;
+$boulder		    : #757575;
+$gray			      : #8c8c8c;
+$silver-chalice : #a2a2a2;
+$silver			    : #b9b9b9;
+$alto			      : #d1d1d1;
+$mercury		    : #e8e8e8;
+$concrete		    : #f2f2f2;
+
+$low-opacity    : 0.35;
+$med-opacity    : 0.65;
+$high-opacity   : 0.85;
+
+/*------------------------------------------------------------*\
+ 	#FONTS
+\*------------------------------------------------------------*/
+
+// Paths
+$font-path: "/assets/fonts/Xfinity-Sans/";
+
+// xfinity sans
+@font-face {
+  font-family: 'xfinity';
+  src: url('#{$font-path}xfinitysans-reg-webfont_eot.eot');
+  src: url('#{$font-path}xfinitysans-reg-webfont_eot.eot?#iefix') format('embedded-opentype'),
+  url('#{$font-path}xfinitysans-reg-webfont_woff.woff') format('woff'),
+  url('#{$font-path}xfinitysans-reg-webfont_ttf.ttf') format('truetype'),
+  url('#{$font-path}xfinitysans-reg-webfont_svg.svg#xfinity_sansregular') format('svg');
+}
+@font-face {
+  font-family: 'xfinity medium';
+  src: url('#{$font-path}xfinitysans-med-webfont_eot.eot');
+  src: url('#{$font-path}xfinitysans-med-webfont_eot.eot?#iefix') format('embedded-opentype'),
+  url('#{$font-path}xfinitysans-med-webfont_woff.woff') format('woff'),
+  url('#{$font-path}xfinitysans-med-webfont_ttf.ttf') format('truetype'),
+  url('#{$font-path}xfinitysans-med-webfont_svg.svg#xfinity_sansmedium') format('svg');
+}
+@font-face {
+  font-family: 'xfinity medium condensed';
+  src: url('#{$font-path}xfinitysans-medcond-webfont_eot.eot');
+  src: url('#{$font-path}xfinitysans-medcond-webfont_eot.eot?#iefix') format('embedded-opentype'),
+  url('#{$font-path}xfinitysans-medcond-webfont_woff.woff') format('woff'),
+  url('#{$font-path}xfinitysans-medcond-webfont_ttf.ttf') format('truetype'),
+  url('#{$font-path}xfinitysans-medcond-webfont_svg.svg#xfinity_sansmedium_condensed') format('svg');
+}
+@font-face {
+  font-family: 'xfinity extra light';
+  src: url('#{$font-path}xfinitysans-exlgt-webfont_eot.eot');
+  src: url('#{$font-path}xfinitysans-exlgt-webfont_eot.eot?#iefix') format('embedded-opentype'),
+  url('#{$font-path}xfinitysans-exlgt-webfont_woff.woff') format('woff'),
+  url('#{$font-path}xfinitysans-exlgt-webfont_ttf.ttf') format('truetype'),
+  url('#{$font-path}xfinitysans-exlgt-webfont_svg.svg#xfinity_sansextra_light') format('svg');
+}
+@font-face {
+  font-family: 'xfinity light';
+  src: url('#{$font-path}xfinitysans-lgt-webfont_eot.eot');
+  src: url('#{$font-path}xfinitysans-lgt-webfont_eot.eot?#iefix') format('embedded-opentype'),
+  url('#{$font-path}xfinitysans-lgt-webfont_woff.woff') format('woff'),
+  url('#{$font-path}xfinitysans-lgt-webfont_ttf.ttf') format('truetype'),
+  url('#{$font-path}xfinitysans-lgt-webfont_svg.svg#xfinity_sanslight') format('svg');
+}
+@font-face {
+  font-family: 'xfinity thin';
+  src: url('#{$font-path}xfinitysans-thin-webfont_eot.eot');
+  src: url('#{$font-path}xfinitysans-thin-webfont_eot.eot?#iefix') format('embedded-opentype'),
+  url('#{$font-path}xfinitysans-thin-webfont_woff.woff') format('woff'),
+  url('#{$font-path}xfinitysans-thin-webfont_ttf.ttf') format('truetype'),
+  url('#{$font-path}xfinitysans-thin-webfont_svg.svg#xfinity_sansthin') format('svg');
+}
+@font-face {
+  font-family: 'xfinity bold';
+  src: url('#{$font-path}xfinitysans-bold-webfont_eot.eot');
+  src: url('#{$font-path}xfinitysans-bold-webfont_eot.eot?#iefix') format('embedded-opentype'),
+  url('#{$font-path}xfinitysans-bold-webfont_woff.woff') format('woff'),
+  url('#{$font-path}xfinitysans-bold-webfont_ttf.ttf') format('truetype'),
+  url('#{$font-path}xfinitysans-bold-webfont_svg.svg#xfinity_sansbold') format('svg');
+}

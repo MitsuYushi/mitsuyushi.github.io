@@ -1,0 +1,276 @@
+.polarisSub {
+    max-width:100%;
+    background-color:$white;
+    border-bottom:1px solid $alto;
+}
+
+.polarisSub-inner {
+    max-width:1180px;
+    margin:0 auto;
+    padding:0;
+}
+
+.polarisSub ul,
+.polarisSub ul li {
+    margin:0;
+    padding:0;
+}
+
+.polarisSub-content {
+    position:relative;
+}
+
+.polarisSub-content--universe {
+    width:65%;
+}
+
+.polarisSub-content--utility {
+    width:35%;
+}
+
+/*********************************************
+inline block helper - for vertical alignment
+**********************************************/
+
+.polarisSub-inner,
+.polarisSub-content .polaris-navigation {
+    font-size:0;
+}
+
+.polarisSub-content,
+.polarisSub-content .polaris-navigation .polaris-item {
+    display:inline-block;
+    float: none;
+    font-size:16px;
+    vertical-align:middle;
+}
+
+.polarisSub-content .polaris-navigation .polaris-item .polaris-link {
+    float:none;
+    display: block;
+    color:$scorpion;
+}
+
+/*********************************************
+universe
+**********************************************/
+
+.polarisSub-content--universe .polaris-navigation > .polaris-item {
+    position:relative;
+    margin-left:20px;
+}
+
+.polarisSub-content--universe .polaris-navigation > .polaris-item:first-child {
+    margin-left:0;
+}
+
+.polarisSub-content--universe .polaris-navigation .polaris-subDrop button.polaris-link {
+    cursor:default;
+    background-color:$white;
+    z-index:1501;
+}
+
+.polarisSub-content--universe .polaris-navigation .polaris-subDrop button.polaris-link:hover {
+    color:initial;
+}
+
+.polarisSub-content--universe .polaris-navigation > .polaris-item .polaris-link {
+    position:relative;
+    display:block;
+    font-size:16px;
+    text-decoration: none;
+    cursor:pointer;
+    color:$scorpion;
+    padding:0 30px 0 15px;
+}
+
+.polarisSub .polaris-navigation > .polaris-item .polaris-link:hover {
+    text-decoration:none;
+    color:$blue;
+}
+
+.polarisSub-content--universe .polaris-navigation > .polaris-subDrop .polaris-link:before,
+.polarisSub-content--universe .polaris-navigation > .polaris-subDrop .polaris-link:after {
+    position:absolute;
+    content:'';
+    top: 22px;
+    width: 1px;
+    height: 8px;
+    background-color: $scorpion;
+    -webkit-transition: all .2s ease-in-out 0s;
+	-moz-transition: all .2s ease-in-out 0s;
+	-o-transition: all .2s ease-in-out 0s;
+	-ms-transition: all .2s ease-in-out 0s;
+	transition: all .2s ease-in-out 0s;
+}
+
+.polarisSub-content--universe .polaris-navigation > .polaris-subDrop .polaris-link:before {
+    right:19px;
+    -webkit-transform: rotate(130deg);
+    -moz-transform: rotate(130deg);
+    transform: rotate(130deg);
+}
+
+.polarisSub-content--universe .polaris-navigation > .polaris-subDrop .polaris-link:after {
+    right:13px;
+    -webkit-transform: rotate(50deg);
+    -moz-transform: rotate(50deg);
+    transform: rotate(50deg);
+}
+
+.polarisSub-content--universe .polaris-navigation > .polaris-subDrop:hover .polaris-link:before,
+.polarisSub-content--universe .polaris-navigation > .polaris-subDrop._open .polaris-link:before {
+    -webkit-transform: rotate(50deg);
+    -moz-transform: rotate(50deg);
+    transform: rotate(50deg);
+}
+
+.polarisSub-content--universe .polaris-navigation > .polaris-subDrop:hover .polaris-link:after,
+.polarisSub-content--universe .polaris-navigation > .polaris-subDrop._open .polaris-link:after {
+    -webkit-transform: rotate(130deg);
+    -moz-transform: rotate(130deg);
+    transform: rotate(130deg);
+}
+
+/* drop downs */
+
+.polarisSub .polaris-dropdown {
+    display:block;
+    position:absolute;
+    top:50%;
+    left:0;
+    width:220px;
+    opacity:0;
+    visibility:hidden;
+    background-color:$white;
+    border:1px solid $alto;
+    //-webkit-transition: all .3s ease-in-out 0s;
+	//-moz-transition: all .3s ease-in-out 0s;
+	//-o-transition: all .3s ease-in-out 0s;
+	//-ms-transition: all .3s ease-in-out 0s;
+	//transition: all .3s ease-in-out 0s;
+
+}
+
+.polarisSub-content--universe .polaris-navigation > .polaris-subDrop:hover > .polaris-dropdown,
+.polarisSub-content--universe .polaris-navigation > .polaris-subDrop._open > .polaris-dropdown {
+    top:100%;
+    opacity:1;
+    visibility:visible;
+}
+
+.polarisSub-content--universe .polaris-navigation > .polaris-subDrop > .polaris-dropdown .polaris-item,
+.polarisSub-content--universe .polaris-navigation > .polaris-subDrop > .polaris-dropdown .polaris-link {
+	display: block;
+	width: 100%;
+	text-align: left;
+	margin: 0;
+}
+
+.polarisSub-content--universe .polaris-navigation > .polaris-subDrop > .polaris-dropdown .polaris-link {
+	height:auto;
+	line-height: 1.3em;
+	padding: 12px 15px;
+}
+
+.polarisSub-content--universe .polaris-navigation > .polaris-subDrop > .polaris-dropdown .polaris-link:before,
+.polarisSub-content--universe .polaris-navigation > .polaris-subDrop > .polaris-dropdown .polaris-link:after {
+    display:none;
+}
+
+/*********************************************
+utility
+**********************************************/
+
+.polarisSub-content--utility {
+    text-align: right;
+}
+
+/* cart */
+
+.polarisSub-content--utility .polarisSub-cart {
+    width: 17%;
+}
+
+.polarisSub-content--utility .polarisSub-cart .polaris-link {
+    padding: 0 20px;
+}
+
+.polarisSub-content--utility .polarisSub-cart .polaris-link .polaris-icon {
+    float: right;
+}
+
+/* search */
+
+.polarisSub-content--utility .polarisSub-search {
+    position:relative;
+    width: 50%;
+    padding: 5px 0;
+}
+
+.polarisSub-content--utility .polarisSub-search label {
+	@include polaris-vh();
+}
+
+.polarisSub-content--utility .polarisSub-search input {
+	width: 100%;
+    height: 40px;
+    line-height: 40px;
+	border: 1px solid $grey8;
+	border-radius: 3px;
+    box-shadow: inset 0 1px 1px $silver;
+    padding: 5px 10px;
+}
+
+.polarisSub-content--utility .polarisSub-search-btn {
+    position:absolute;
+    border: 0;
+    background: none;
+    top:15px;
+    right:5px;
+    content:'';
+    width:20px;
+    height:20px;
+    opacity: .6;
+    background-image: url("data:image/svg+xml,%3Csvg fill='black' version='1.1' id='Capa_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='612.08px' height='612.08px' viewBox='0 0 612.08 612.08' style='enable-background:new 0 0 612.08 612.08;' xml:space='preserve'%3E%3Cg%3E%3Cpath d='M237.927,0C106.555,0,0.035,106.52,0.035,237.893c0,131.373,106.52,237.893,237.893,237.893 c50.518,0,97.368-15.757,135.879-42.597l0.028-0.028l176.432,176.433c3.274,3.274,8.48,3.358,11.839,0l47.551-47.551 c3.274-3.274,3.106-8.703-0.028-11.838L433.223,373.8c26.84-38.539,42.597-85.39,42.597-135.907C475.82,106.52,369.3,0,237.927,0z M237.927,419.811c-100.475,0-181.918-81.443-181.918-181.918S137.453,55.975,237.927,55.975s181.918,81.443,181.918,181.918 S338.402,419.811,237.927,419.811z'/%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3C/svg%3E%0A");
+    background-size:20px;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 1;
+    }
+}
+
+.polarisSub-content--utility .polarisSub-search-btn-close {
+  display: none;
+}
+
+.polarisSub-content--utility .polarisSub-search .polaris-link {
+    width: 100%;
+    padding:10px;
+}
+
+/* language */
+
+.polarisSub-content--utility .polarisSub-languageChange {
+    width:32%;
+}
+
+.polarisSub-content--utility .polarisSub-languageChange .polaris-link {
+    text-align: left;
+    padding: 0 20px;
+}
+
+/*********************************************
+MQ
+**********************************************/
+
+@media all and (max-width: 1200px) {
+  .polarisSub-content--universe .polaris-navigation > .polaris-item .polaris-link {
+    padding: 0 30px 0 10px;
+  }
+
+  .polarisSub-content--utility .polarisSub-languageChange .polaris-link {
+    font-size: 12px;
+  }
+}

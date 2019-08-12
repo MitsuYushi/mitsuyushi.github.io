@@ -1,0 +1,78 @@
+/* ---- Mixins ---- */
+@mixin polaris-vh {
+    position: absolute;
+    display: block;
+    visibility: visible;
+    overflow: hidden;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+}
+
+@mixin border-radius-small {
+    border-radius: 3px;
+}
+
+@mixin translucent-black-background($opacity) {
+    background-color: $black;
+    background-color: rgba(0, 0, 0, $opacity);
+}
+
+.polaris-nav {
+    /* ---- Utils ---- */
+    .polaris-accessibly-hidden,
+    .polaris-vh {
+        @include polaris-vh;
+    }
+
+    ul, ol, li {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .polaris-header a {
+        text-decoration: none;
+        color: $white;
+    }
+}
+
+// signed in - dropdown
+
+.polaris-nav {
+    &.polaris-nav-header-wrapper {
+      z-index: 1501;
+
+      .polaris-profile.polaris-is-open {
+
+        .polaris-dropdown-profile {
+          position: absolute;
+          top: 50px;
+          right: 0;
+
+          .polaris-fullgreeting {
+            max-width: 300px;
+            padding: 10px;
+          }
+
+          .polaris-username {
+            float: none;
+            width: 100%;
+            text-align: center;
+            margin-bottom: 10px;
+          }
+
+          .polaris-signout {
+            float: none;
+            border: 0;
+            text-align: center;
+          }
+        }
+
+      }
+
+  }
+}

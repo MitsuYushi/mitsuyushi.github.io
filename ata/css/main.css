@@ -1,0 +1,26 @@
+.navbar-nav
+.nav-link:hover {
+  background-color: 'red'
+}
+
+.area {
+  /* width: 300px; */
+  height: 50vh;
+  background: url(../images/telecom.jpg) no-repeat;
+  position: relative;
+}
+
+.bubble {
+  position: absolute;
+  left: 93px;
+  top: 21px;
+  width: 135px;
+  height: 84px;
+  display: table;
+}
+
+.bubble p,.bubble h1 {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}

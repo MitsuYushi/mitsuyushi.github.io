@@ -1,0 +1,51 @@
+.polaris-nav {
+    .polaris-notifications {
+        position: absolute;
+        top: 202px;
+        left: 0;
+        right: 0;
+    }
+
+    .polaris-notification {
+        display: block;
+        position: relative;
+        margin: 2px 0 0 0;
+        @include translucent-black-background($high-opacity);
+        padding: 20px;
+        overflow: hidden;
+        min-height: 80px;
+        @include border-radius-small;
+        text-align: left;
+    }
+
+    .polaris-notification .polaris-icon {
+        height: 50px;
+        width: 35px;
+        margin-right: 20px;
+    }
+
+    .polaris-notification-msg {
+        margin: 0;
+        color: $white;
+        font-size: 15px;
+        line-height: 1.2;
+    }
+
+    .polaris-notification-msg2 {
+        margin: 0.5em 0 0 0;
+        color: $gray;
+        font-size: 13px;
+        line-height: 1.2;
+    }
+
+    .polaris-notification .polaris-notification-dismiss {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        height: 15px;
+        width: 15px;
+        margin: 0;
+        border: 0;
+        cursor: pointer;
+    }
+}

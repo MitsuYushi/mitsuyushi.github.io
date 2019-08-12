@@ -1,0 +1,50 @@
+.polaris-nav {
+    .polaris-dropdown-profile {
+        width: 300px;
+        background-color: $black;
+        text-align: center;
+        overflow: visible;
+        max-height: 500px;
+    }
+
+    .polaris-fullgreeting {
+        float: none;
+        overflow: hidden;
+        max-width: 280px;
+        padding: 40px 0 20px;
+        font-size: 1.8rem;
+        white-space: nowrap;
+    }
+
+    .polaris-fullgreeting.polaris-long-text {
+        font-size: 1.5rem;
+    }
+
+    .polaris-username,
+    .polaris-signout {
+        display: inline-block;
+        float: left;
+        width: 50%;
+        padding: 0 1em;
+        font-size: 0.8rem;
+    }
+
+    .polaris-username {
+        text-align: right;
+    }
+
+    .polaris-signout {
+        border-left: 1px solid $silver;
+        color: $silver;
+        text-align: left;
+    }
+
+    .polaris-signout:hover,
+    .polaris-signout:focus {
+        color: $blue;
+    }
+
+    .polaris-profile .polaris-link {
+        padding: 0 12px;
+    }
+}
