@@ -1,0 +1,24 @@
+table{
+	margin: auto;
+}
+
+img
+{
+	width: 80px;
+	height: 40px;
+}
+#big
+{
+	width: 416px;
+	height: 208px;
+}
+.container {
+  position: relative;
+  text-align: center;
+}
+.topRight {
+  color: white;
+  position: absolute;
+  top: 8px;
+  right: 16px;
+}
