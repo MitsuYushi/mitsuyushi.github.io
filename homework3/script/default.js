@@ -9,8 +9,8 @@ var pic =
 /*
 var big = document.getElementById("big");
 var pic_title = document.getElementById("title");
-var title = 
-[	
+var title =
+[
 	"ព្រះបរមរាជវាំង",
 	"សារៈមន្ទីជាតិ",
 	"វិមានឯករាជ្យ",
@@ -32,11 +32,11 @@ function changePic(id) {
 	}
 }*/
 
-pic[0].onclick = function(){changePic(0);} 
-pic[1].onclick = function(){changePic(1);} 
-pic[2].onclick = function(){changePic(2);} 
-pic[3].onclick = function(){changePic(3);} 
-pic[4].onclick = function(){changePic(4);} 
+pic[0].onclick = function(){changePic(0);}
+pic[1].onclick = function(){changePic(1);}
+pic[2].onclick = function(){changePic(2);}
+pic[3].onclick = function(){changePic(3);}
+pic[4].onclick = function(){changePic(4);}
 
 var big	= document.getElementById('big');
 var pic_title = document.getElementsByClassName("topRight")[0];
