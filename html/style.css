@@ -1,0 +1,43 @@
+body{
+      background-color: gray;
+}
+.view{
+    text-align: center;
+    margin-top: 500px;
+}
+.bord{
+    border-color:red;
+    border-style: solid;
+    background-color:red ;
+    margin-left: 750px; 
+    margin-right: 750px;
+}
+.seat {
+    background-color: #444451;
+    height: 12px;
+    width: 15px;
+    margin: 3px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.screen {
+    background-color: #fff;
+    height: 100px;
+    width: 100%;
+    margin: 15px 0;
+    transform: rotateX(-45deg);
+    box-shadow: 0 3px 10px rgba(255, 255, 255, 0.7);
+    
+}
+
+.container {
+    perspective: 1000px;
+    margin-bottom: 30px;
+}
+.table{
+    margin: 15px 0;
+    text-align: center;
+}
+  
+  
