@@ -18,7 +18,7 @@ function updateCountdown() {
 
   const currentTime = new Date();
   const diff = newYearTime - currentTime;
-  console.log(diff)
+  
 
   const d = Math.floor(diff / 1000 / 60 / 60 / 24);
   const h = Math.floor(diff / 1000 / 60 / 60) % 24;

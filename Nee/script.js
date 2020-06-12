@@ -8,15 +8,17 @@ const loading = document.getElementById('loading');
 
 const currentYear = new Date().getFullYear();
 
-const newBirthTime = new Date(`February 25 ${currentYear} 00:00:00`);
+const newYearTime = new Date(`February 25 ${currentYear + 1} 00:00:00`);
 
 // Set background year
-year.innerText = currentYear ;
+year.innerText = currentYear + 1;
 
 // Update countdown time
 function updateCountdown() {
+
   const currentTime = new Date();
-  const diff = newBirthTime - currentTime;
+  const diff = newYearTime - currentTime;
+  
 
   const d = Math.floor(diff / 1000 / 60 / 60 / 24);
   const h = Math.floor(diff / 1000 / 60 / 60) % 24;
